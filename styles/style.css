@@ -7,8 +7,8 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27AE60;
-  --color-white: #FFFFFF;
+  --color-secondary: #27ae60;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -18,8 +18,8 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-  --transition-1: all .4s ease-in-out;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --transition-1: all 0.4s ease-in-out;
 }
 
 body {
@@ -95,11 +95,6 @@ section {
   flex-direction: column;
   transform: translateY(-50%);
 }
-.controls .activeBtn {
-  background-color: var(--color-secondary) !important;
-  transition: var(--transition-1) i;
-  transition-color: var(--color-white) !important;
-}
 .controls .control {
   padding: 1rem;
   cursor: pointer;
@@ -113,8 +108,15 @@ section {
   justify-content: center;
   box-shadow: var(--box-shadow-1);
 }
-.controls .control i {
+.controls .control .icon {
   font-size: 1rem;
-  color: var(--color-grey-2);
+  color: var(--color-grey-1);
   pointer-events: none;
+}
+.controls .activeBtn {
+  background-color: var(--color-secondary) !important;
+  transition: var(--transition-1);
+}
+.controls .activeBtn .icon {
+  color: var(--color-white) !important;
 }/*# sourceMappingURL=style.css.map */
